@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # Distribution / packaging
-dist/
 build/
 *.egg-info/
 
@@ -23,6 +22,8 @@ build/
 *.swp
 *.swo
 
-# Allow releases directory
+# Allow compiled files
+!dist/
+!dist/*
 !releases/
 !releases/*
