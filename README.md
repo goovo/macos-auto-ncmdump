@@ -4,16 +4,28 @@
 
 ![shield](https://img.shields.io/badge/python-2.7%20%7C%203.4%2B-blue)
 
-## macOS使用说明
+## 下载使用
 
-1. 下载最新版本的 [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/releases/latest)
-2. 将应用拖入Applications文件夹
-3. 首次运行时，右键点击应用 -> 打开
-4. 使用方法：
+### 下载方式
+1. 通过Release下载（推荐）：
+   - 访问 [Releases](https://github.com/zenenznze/macos-auto-ncmdump/releases) 页面
+   - 下载最新版本的 `NCM转换器-v1.0.0.zip`
+   - 解压后将应用拖入Applications文件夹
+
+2. 直接下载源码编译版本：
+   - [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/blob/main/releases/NCM转换器.app)
+
+### 首次使用说明
+如果提示"无法打开，因为来源不明"：
+- 在访达中右键点击应用 -> 打开 -> 点击"打开"按钮
+
+### 使用方法
+1. 启动后：
    - 点击"选择文件"可以选择单个或多个NCM文件
    - 点击"选择文件夹"可以选择包含NCM文件的文件夹
    - 点击"开始转换"开始批量转换
    - 点击"清除列表"可以清空当前选择的文件
+2. 程序会记住上次使用的文件夹，方便下次使用
 
 ## 功能特点
 
@@ -23,7 +35,7 @@
 - 转换完成后自动删除原NCM文件
 - 自动记住上次使用的文件夹
 
-## 自行编译说明
+## 自行编译
 
 ### 环境要求
 - Python 3.4+ (推荐使用Python 3.12)
