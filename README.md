@@ -12,8 +12,9 @@
    - 下载最新版本的 `NCM转换器-v1.0.0.zip`
    - 解压后将应用拖入Applications文件夹
 
-2. 直接下载源码编译版本：
-   - [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/blob/main/releases/NCM转换器.app)
+2. 直接下载编译版本：
+   - [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/tree/main/dist/NCM转换器.app)
+   - [NCM转换器-v1.0.0.zip](https://github.com/zenenznze/macos-auto-ncmdump/tree/main/dist/NCM转换器-v1.0.0.zip)
 
 ### 首次使用说明
 如果提示"无法打开，因为来源不明"：
@@ -33,7 +34,7 @@
 - 图形界面操作，简单易用
 - 自动将NCM文件转换为MP3格式
 - 转换完成后自动删除原NCM文件
-- 自动记住上次使用的文件夹
+- 自动记住上次使用的文件夹路径
 
 ## 自行编译
 
