@@ -4,18 +4,62 @@
 
 ![shield](https://img.shields.io/badge/python-2.7%20%7C%203.4%2B-blue)
 
-## [下载EXE Download EXE](https://github.com/iKunpw/auto-ncmdump/releases/download/1.0/auto-ncmdump.exe "auto-ncmdump.exe")
-
 ## 功能 Use
 
-可实现后台挂起无感知地全自动ncm to mp3。  
-运行后，在网易云音乐客户端上选曲下载，下载成功即转换成功。  
-或者，先下载完成后，再运行本工具，依次转换成mp3。
+- 支持批量选择NCM文件或文件夹进行转换
+- 图形界面操作，简单易用
+- 自动将NCM文件转换为MP3格式
+- 转换完成后自动删除原NCM文件
+- 自动记住上次使用的文件夹
 
 ## 使用 Usage
 
-无需 Python 环境，仅支持 Windows 10操作系统。  
-下载 [auto-ncmdump.exe](https://github.com/iKunpw/auto-ncmdump/releases/download/1.0/auto-ncmdump.exe "auto-ncmdump.exe")  后运行，按照操作提示使用。
-  
-  
+### Windows
+下载 [auto-ncmdump.exe](https://github.com/iKunpw/auto-ncmdump/releases/download/1.0/auto-ncmdump.exe "auto-ncmdump.exe") 后运行，按照操作提示使用。
+
+### macOS
+1. 下载最新版本的 [NCM转换器.app](https://github.com/iKunpw/auto-ncmdump/releases/latest)
+2. 将应用拖入Applications文件夹
+3. 首次运行时，右键点击应用 -> 打开
+4. 使用方法：
+   - 点击"选择文件"可以选择单个或多个NCM文件
+   - 点击"选择文件夹"可以选择包含NCM文件的文件夹
+   - 点击"开始转换"开始批量转换
+   - 点击"清除列表"可以清空当前选择的文件
+
+## 自行编译说明
+
+### 环境要求
+- Python 3.4+ (推荐使用Python 3.12)
+- macOS 10.13+
+
+### 依赖安装
+```bash
+# 安装编译和运行所需依赖
+pip install pyinstaller ncmdump
+```
+
+### 编译步骤
+1. 克隆代码仓库
+```bash
+git clone https://github.com/iKunpw/auto-ncmdump.git
+cd auto-ncmdump
+```
+
+2. 编译应用程序
+```bash
+pyinstaller --windowed --noconfirm --name "NCM转换器" --add-data "Info.plist:." ncm_converter.py
+```
+
+编译后的应用程序位于 `dist/NCM转换器.app`
+
+### 权限说明
+应用程序需要以下权限：
+- 文件访问权限：用于读取NCM文件和保存转换后的MP3文件
+- Application Support目录访问权限：用于保存配置文件（保存在 ~/Library/Application Support/NCM转换器/）
+
+如果遇到权限问题：
+1. 首次运行时通过"右键 -> 打开"的方式运行
+2. 在"系统偏好设置 -> 安全性与隐私 -> 隐私"中授予相应权限
+
 软件仅供学习交流，请勿用于商业及非法用途，如产生法律纠纷与本人无关。
