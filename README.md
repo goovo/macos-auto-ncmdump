@@ -4,19 +4,15 @@
 
 ![shield](https://img.shields.io/badge/python-2.7%20%7C%203.4%2B-blue)
 
-## 下载使用
+## 重要说明
 
-### 下载方式
-1. 通过Release下载（推荐）：
-   - 访问 [Releases](https://github.com/zenenznze/macos-auto-ncmdump/releases) 页面
-   - 下载最新版本的 `NCM转换器-v1.0.0.zip`
-   - 解压后将应用拖入Applications文件夹
+🎉 v1.0.0版本现已发布！可以通过以下方式获取：
+1. 直接点击 [Releases](https://github.com/zenenznze/macos-auto-ncmdump/releases) 下载最新版本
+2. 或者从dist目录获取：[NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/tree/main/dist/NCM转换器.app)
 
-2. 直接下载编译版本：
-   - [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/tree/main/dist/NCM转换器.app)
-   - [NCM转换器-v1.0.0.zip](https://github.com/zenenznze/macos-auto-ncmdump/tree/main/dist/NCM转换器-v1.0.0.zip)
+## 使用说明
 
-### 首次使用说明
+### 首次使用注意
 如果提示"无法打开，因为来源不明"：
 - 在访达中右键点击应用 -> 打开 -> 点击"打开"按钮
 
