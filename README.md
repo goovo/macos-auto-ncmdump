@@ -1,24 +1,12 @@
-# 使用 [nondance/ncmdump](https://github.com/nondanee/ncmdump "nondance/ncmdump") 实现，前排感谢大佬
+# macOS NCM转换器
 
-# Netease Cloud Music Copyright Protection File Dump
+这是一个 [nondance/ncmdump](https://github.com/nondanee/ncmdump "nondance/ncmdump") 的macOS图形界面Fork版本，添加了更好的用户体验和新功能。感谢原作者的付出！
 
 ![shield](https://img.shields.io/badge/python-2.7%20%7C%203.4%2B-blue)
 
-## 功能 Use
+## macOS使用说明
 
-- 支持批量选择NCM文件或文件夹进行转换
-- 图形界面操作，简单易用
-- 自动将NCM文件转换为MP3格式
-- 转换完成后自动删除原NCM文件
-- 自动记住上次使用的文件夹
-
-## 使用 Usage
-
-### Windows
-下载 [auto-ncmdump.exe](https://github.com/iKunpw/auto-ncmdump/releases/download/1.0/auto-ncmdump.exe "auto-ncmdump.exe") 后运行，按照操作提示使用。
-
-### macOS
-1. 下载最新版本的 [NCM转换器.app](https://github.com/iKunpw/auto-ncmdump/releases/latest)
+1. 下载最新版本的 [NCM转换器.app](https://github.com/zenenznze/macos-auto-ncmdump/releases/latest)
 2. 将应用拖入Applications文件夹
 3. 首次运行时，右键点击应用 -> 打开
 4. 使用方法：
@@ -26,6 +14,14 @@
    - 点击"选择文件夹"可以选择包含NCM文件的文件夹
    - 点击"开始转换"开始批量转换
    - 点击"清除列表"可以清空当前选择的文件
+
+## 功能特点
+
+- 支持批量选择NCM文件或文件夹进行转换
+- 图形界面操作，简单易用
+- 自动将NCM文件转换为MP3格式
+- 转换完成后自动删除原NCM文件
+- 自动记住上次使用的文件夹
 
 ## 自行编译说明
 
@@ -42,8 +38,8 @@ pip install pyinstaller ncmdump
 ### 编译步骤
 1. 克隆代码仓库
 ```bash
-git clone https://github.com/iKunpw/auto-ncmdump.git
-cd auto-ncmdump
+git clone https://github.com/zenenznze/macos-auto-ncmdump.git
+cd macos-auto-ncmdump
 ```
 
 2. 编译应用程序
@@ -61,5 +57,10 @@ pyinstaller --windowed --noconfirm --name "NCM转换器" --add-data "Info.plist:
 如果遇到权限问题：
 1. 首次运行时通过"右键 -> 打开"的方式运行
 2. 在"系统偏好设置 -> 安全性与隐私 -> 隐私"中授予相应权限
+
+## 其他平台
+
+### Windows版本
+访问原项目 [auto-ncmdump](https://github.com/iKunpw/auto-ncmdump) 获取Windows版本。
 
 软件仅供学习交流，请勿用于商业及非法用途，如产生法律纠纷与本人无关。
